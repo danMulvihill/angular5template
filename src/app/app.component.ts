@@ -16,7 +16,8 @@ import { DataService } from './data.service';
 <app-img-gal></app-img-gal>
 <app-form></app-form>
 <h2>Data Service: {{myProp}}</h2>
-
+<h3>To turn on the server from the cli:</h3>
+<p>ng serve</p>
 <h3>To create a new component on the cli:</h3>
 <p>ng generate component your-component-name</p>
 <h3>To create a new service</h3>
