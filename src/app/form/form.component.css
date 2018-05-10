@@ -1,0 +1,14 @@
+.box{
+    background-color: #ccc;
+    width: 95%;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    height: 30vh;
+    cursor: crosshair;
+}
+
+.money{
+    color:red;
+    font-weight: bold;
+}

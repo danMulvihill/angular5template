@@ -23,15 +23,19 @@ import { DataService } from './data.service';
 <h3>To create a new service</h3>
 <p>ng generate service your-service-name</p>
 <h3>Here are some links to help you start: </h3>
+
 <ul>
   <li><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></li>
   <li><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></li>
   <li><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></li>
 </ul>
+<h4>{{greetYear()}} <small>Exact time: {{getDateTime()}}</small></h4>
+
   `,
   styles: [`
       body{background-color: #ccc}
       h2{color: darkgreen}
+      small {float: right; color: green}
       `]
 })
 export class AppComponent {
@@ -40,10 +44,16 @@ export class AppComponent {
   }
   myProp: string = '';
   ngOnInit(){
-    console.log(this.dataservice.fruit)
+    //console.log(this.dataservice.fruit)
     this.myProp = this.dataservice.myFruit();
   }
 
-  title = 'Angular 5 Template';
-  subTitle = "subtitle would go here."
+  greetYear(){
+    return "Welcome, "+ new Date().getFullYear();
+  }
+  getDateTime(){
+    return new Date()
+  }
+  public title = 'Angular 2+ Template';
+  public subTitle = "Subtitle would go here (if you wanted one)";
 }

@@ -1,4 +1,15 @@
 
     <button (click) = "doSomething($event)">Click this Button</button>
 
+    <input [id]="myId" type='text' value ="Sean">
+    <input id="{{myId2}}" [disabled]="isDisabled" type="text" value = "Maddie">
+
+    <div class="box" (click) = "doSomething($event)">Click over any spot in this box to see your coordinates</div>
+<input #myInput type="text" placeholder="Enter your name">
+<button (click) = "logMessage(myInput.value)">Log</button>
+Howdy {{myInput.value}}
+<br>
+You owe us <span class="money">{{ 9.563 | currency: 'EUR'}}</span>
 <p id="data-out"></p>
+
+<hr>

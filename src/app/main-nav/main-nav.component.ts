@@ -12,7 +12,7 @@ export class MainNavComponent implements OnInit {
   ngOnInit() {
   }
 
-  title = "Main Menu"
+  //title = "Main Menu"
   menu = ["Home", "News","Contact Us","About Us"]
 
 }
